@@ -46,7 +46,27 @@ The \n is a line breaker here.
 - --help/ -h so we can use this program for any command line tool that exist.
 - **Man** command open the manual for the command line tools and this must be installed on the system.
 	- in this just install **sudo apt install man-db**.
-
-## First steps with Linux
+## User Management
 ---
-- 
+- **System accounts:** These are responsible for running background tasks such as webserver, database and they don't have a home directory.
+- **Regular accounts:** These accounts will have their own files and directories and can not perform admin tasks.
+- **Superuser(root):** The root user has unrestricted access to the entire system including the files and directories of a normal users.
+	- the user can do anything rather than admin tasks without any restrictions.
+## Elevating Privileges: sudo
+---
+- To get the temporary admin privileges put the **sudo** with any command and you're good to go.
+	- Ex: **sudo ls /root** now the normal user can access the root directory without any root privileges on a temp bases and when the user cut the terminal window then will back to normal privileges. 
+- Be careful with command when you have the root privileges
+	- **sudo rm -rf /etc** this command will destroy the installed distro on the system.
+## Package Management Linux
+---
+- The linux distros have a centralized way to install software and this process called the package management.
+- on the debian based distros use the tool **apt** to get the updates.
+	- **apt update** this will update the packages but we have to have admin privileges so
+		- **sudo apt update**
+		- **sudo apt upgrade** this will upgrade the packages
+		- **sudo apt full-upgrade or sudo apt dist-upgrade** this will upgrade whole os within the system.
+		- **sudo apt install** [packagename] to install the specific tool or package.
+		- **sudo apt remove** [packagename] to remove the specific tool or package.
+		- **sudo apt autoremove** this command will remove those packages those are no longer needed.
+- **Cowsay:** just a small command line tool for fun.
