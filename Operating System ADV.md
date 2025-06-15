@@ -908,8 +908,3 @@ Use:
     
 
 ---
-
-```
-
-Let me know if you'd like a **cheat sheet**, **graphical flowchart**, or **interactive checklist** added to these notes!
-```
