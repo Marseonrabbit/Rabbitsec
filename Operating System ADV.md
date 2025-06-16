@@ -26,7 +26,9 @@
 - Support continuous delivery pipelines.
 
 ## 6. Monitoring
-- Track system performance and service availability.
+- Track system performance and service availability.flowchart TD
+Start --> Stop
+
 - Analyze logs and resource usage.
 - Automate alerting and recovery procedures.
 
@@ -772,11 +774,11 @@ Here are **well-structured, Obsidian-style Markdown notes** summarizing the sect
 
 ## 🗂️ 2. Package Managers by System
 
-|OS|Package Manager|Install Command Example|
-|---|---|---|
-|Ubuntu/Debian|APT|`sudo apt-get install tcpdump`|
-|Red Hat/CentOS|YUM / DNF|`sudo yum install tcpdump`|
-|FreeBSD|pkg|`sudo pkg install tcpdump`|
+| OS             | Package Manager | Install Command Example        |
+| -------------- | --------------- | ------------------------------ |
+| Ubuntu/Debian  | APT             | `sudo apt-get install tcpdump` |
+| Red Hat/CentOS | YUM / DNF       | `sudo yum install tcpdump`     |
+| FreeBSD        | pkg             | `sudo pkg install tcpdump`     |
 
 - Repositories often provide **precompiled binaries**.
     
@@ -908,3 +910,112 @@ Use:
     
 
 ---
+# 📚 Recommended Reading Notes
+
+## 🏗️ Scalability & Architecture
+
+### 📘 The Art of Scalability
+- **Authors**: Martin L. Abbott, Michael T. Fisher  
+- **Publisher**: Addison-Wesley (2nd Edition, 2015)  
+- **Summary**: Scalable web architectures, business processes, and team structures. Ideal for enterprise growth planning.
+
+---
+
+## 🐧 Linux, UNIX, and Philosophy
+
+### 📘 Linux and the Unix Philosophy
+- **Author**: Mike Gancarz  
+- **Publisher**: Digital Press, 2003  
+- **Summary**: Applies UNIX design principles like simplicity and modularity to real-world development.
+
+### 📘 The Cathedral & The Bazaar
+- **Author**: Eric S. Raymond  
+- **Publisher**: O’Reilly Media, 2001  
+- **Summary**: Essays on open-source development models. A foundational work in open-source culture.
+
+### 📘 The Daemon, the GNU & the Penguin
+- **Author**: Peter H. Salus  
+- **Publisher**: Reed Media Services, 2008  
+- **Summary**: A historical narrative of UNIX, GNU, and Linux.  
+- **Note**: Available under Creative Commons on [groklaw.com](https://www.groklaw.net) or [tinyurl.com/d6u7j](https://tinyurl.com/d6u7j)
+
+### 📘 The Complete April Fools’ Day RFCs
+- **Authors**: Thomas A. Limoncelli, Peter Salus  
+- **Publisher**: Peer-to-Peer Communications, 2007  
+- **Summary**: Humorous RFCs. Fun insight into Internet engineering culture.  
+- 📎 [Free at rfc-humor.com](https://rfc-humor.com)
+
+---
+
+## 🖥️ System Administration & DevOps
+
+### 📘 The Phoenix Project
+- **Authors**: Gene Kim, Kevin Behr, George Spafford  
+- **Publisher**: IT Revolution Press, 2014  
+- **Summary**: DevOps and IT transformation told through a novel. Widely recommended.
+
+### 📘 The DevOps Handbook
+- **Authors**: Gene Kim, Jez Humble, Patrick Debois, John Willis  
+- **Publisher**: IT Revolution Press, 2016  
+- **Summary**: Practical DevOps methods to build agile, secure, and reliable tech organizations.
+
+### 📘 The Practice of System and Network Administration
+- **Authors**: Thomas A. Limoncelli, Christina J. Hogan, Strata R. Chalup  
+- **Publisher**: Addison-Wesley, 2008  
+- **Summary**: Policies, procedures, and tools for sysadmins.  
+- 📎 [Blog: everythingsysadmin.com](https://everythingsysadmin.com)
+
+### 📘 The Practice of Cloud System Administration
+- **Authors**: Same as above  
+- **Publisher**: Addison-Wesley, 2014  
+- **Summary**: Focuses on managing cloud infrastructure and distributed systems.
+
+---
+
+## 🛠️ Essential Tools & Practical Guides
+
+### 📘 Linux Command Line and Shell Scripting Bible
+- **Authors**: Richard Blum, Christine Bresnahan  
+- **Publisher**: Wiley, 2015  
+- **Summary**: Complete shell scripting and command-line reference for Linux users.
+
+### 📘 Sed & Awk
+- **Authors**: Dale Dougherty, Arnold Robbins  
+- **Publisher**: O’Reilly Media, 1997  
+- **Summary**: Deep dive into `sed` and `awk`, essential text-processing tools for UNIX/Linux.
+
+### 📘 The Hacker Playbook 2
+- **Author**: Peter Kim  
+- **Publisher**: CreateSpace, 2015  
+- **Summary**: Step-by-step playbook for penetration testing. Focuses on practical exploitation techniques.
+
+### 📘 Practical Vim
+- **Author**: Drew Neil  
+- **Publisher**: Pragmatic Bookshelf, 2012  
+- **Summary**: Tips and workflows to master Vim editing and speed.
+
+### 📘 The Linux Command Line
+- **Author**: William E. Shotts  
+- **Publisher**: No Starch Press, 2012  
+- **Summary**: Beginner-friendly but comprehensive guide to Linux shell usage.
+
+### 📘 Automate the Boring Stuff with Python
+- **Author**: Al Sweigart  
+- **Publisher**: No Starch Press  
+- **Summary**: Python programming for automation tasks like file management, spreadsheets, and web scraping.  
+- 📎 [Website](https://automatetheboringstuff.com)
+
+```mermaid
+flowchart LR
+    P["Power On"] --> B1["Load BIOS/UEFI from NVRAM"] --> H["Probe for hardware"]
+    H --> SBD["Select boot device\\n(disk, network)"] --> ESP["Identify EFI system partition"] --> BL["Load boot loader\\n(e.g., GRUB)"]
+    BL --> DK["Determine which kernel to boot"] --> LK["Load kernel"] --> IK["Instantiate kernel data structures"]
+    IK --> SI["Start init/systemd as PID 1"] --> EX["Execute startup scripts"] --> RS["Running system"]
+
+```
+
+
+
+
+
+
