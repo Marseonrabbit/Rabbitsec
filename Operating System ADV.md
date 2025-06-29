@@ -732,8 +732,6 @@ Online resources for **practical, step-by-step help**:
 Here are **well-structured, Obsidian-style Markdown notes** summarizing the section on **finding and installing software** on UNIX/Linux systems, including best practices, tools, and commands:
 
 ---
-
-```markdown
 # 📦 Software Installation on UNIX/Linux
 
 > _Chapter Summary: How to find, verify, and install software packages using package managers or from source._
